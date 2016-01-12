@@ -156,7 +156,7 @@ struct Sass_Data_Context; // : Sass_Context
 struct Sass_Options* sass_make_options (void);
 // Create and initialize a specific context
 struct Sass_File_Context* sass_make_file_context (const char* input_path);
-struct Sass_Data_Context* sass_make_data_context (char* source_string);
+struct Sass_Data_Context* sass_make_data_context (char* source_string, bool should_clone);
 
 // Call the compilation step for the specific context
 int sass_compile_file_context (struct Sass_File_Context* ctx);

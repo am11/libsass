@@ -75,7 +75,7 @@ The most important is your sass file (or string of sass code).  With this, you w
 
 **Building a data compiler**
 
-    context = sass_make_data_context("div { a { color: blue; } }")
+    context = sass_make_data_context("div { a { color: blue; } }", false)
     options = sass_data_context_get_options(context)
     sass_option_set_precision(options, 1)
     sass_option_set_source_comments(options, true)
